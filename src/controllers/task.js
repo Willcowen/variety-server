@@ -49,27 +49,69 @@ const deleteTask = async (req, res) => {
   });
 
   const tasks = await prisma.task.findMany({
-    where: { 
+    where: {
       userId: foundUser.id,
-     },
+    },
   });
 
-  const taskToDelete = tasks.filter(task => task.id === Number(req.params.id))
-
+  const taskToDelete = tasks.filter(
+    (task) => task.id === Number(req.params.id)
+  );
 
   const deleteTask = await prisma.task.delete({
-    where: { 
+    where: {
       id: taskToDelete[0].id,
     },
+  });
+
+  console.log(
+    'params:',
+    req.params,
+    'tasks:',
+    tasks,
+    'user',
+    foundUser,
+    'task to delete',
+    taskToDelete
+  );
+
+  res.status(201).json({ taskToDelete });
+};
+
+const updateTask = async (req, res) => {
+  const token = req.headers.authorization.split(' ')[1];
+  const email = jwt.decode(token);
+  const {name, description, status, index} = req.body
+
+  const foundUser = await prisma.user.findUnique({
+    where: { email: email },
+  });
+
+  const tasks = await prisma.task.findMany({
+    where: {
+      userId: foundUser.id,
+    },
+  });
+
+  const taskToUpdate = tasks.filter(
+    (task) => task.id === Number(req.params.id)
+  );
+  
+  const updatedTask = await prisma.task.update({
+    where: { 
+      id: taskToUpdate[0].id,
+    },
+    data: {
+      status: status,
+      index: index
+    }
   })
-
-  console.log('params:', req.params, 'tasks:', tasks, 'user', foundUser, 'task to delete', taskToDelete);
-
-  res.status(201).json({taskToDelete})
+  res.json(updatedTask);
 };
 
 module.exports = {
   create,
   getTasks,
-  deleteTask
+  deleteTask,
+  updateTask,
 };
