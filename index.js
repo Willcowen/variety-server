@@ -1,5 +1,6 @@
 const userRouter = require("./src/routes/user.js")
 const taskRouter = require("./src/routes/task.js")
+const tasksRouter = require("./src/routes/tasks.js")
 
 //Include the express library
 const express = require("express")
@@ -18,6 +19,7 @@ app.use(cors());
 
 app.use('/user', userRouter)
 app.use('/task', taskRouter)
+app.use('/tasks', tasksRouter)
 
 //Start up our server
 const port = 4000

@@ -35,6 +35,14 @@ const getTasks = async (req, res) => {
 
   const tasks = await prisma.task.findMany({
     where: { userId: foundUser.id },
+    orderBy: [
+      {
+        status: 'desc',
+      },
+      {
+        index: 'asc',
+      },
+    ],
   });
 
   return res.json({ tasks });
@@ -109,9 +117,11 @@ const updateTask = async (req, res) => {
   res.json(updatedTask);
 };
 
+
+
 module.exports = {
   create,
   getTasks,
   deleteTask,
-  updateTask,
+  updateTask
 };
