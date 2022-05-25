@@ -2,10 +2,7 @@ const prisma = require('../utils/prisma');
 const jwt = require('jsonwebtoken');
 
 const create = async (req, res) => {
-  console.log('req.headers:', req.headers.authorization);
-  console.log('token:', req.headers.authorization.split(' ')[1]);
   const token = req.headers.authorization.split(' ')[1];
-  console.log('decoded token:', jwt.decode(token));
   const email = jwt.decode(token);
   const { name, description, status } = req.body;
 
@@ -26,7 +23,6 @@ const create = async (req, res) => {
 };
 
 const getTasks = async (req, res) => {
-  console.log('token:', req.headers.authorization.split(' ')[1]);
   const token = req.headers.authorization.split(' ')[1];
   const email = jwt.decode(token);
   const foundUser = await prisma.user.findUnique({
@@ -72,16 +68,6 @@ const deleteTask = async (req, res) => {
     },
   });
 
-  console.log(
-    'params:',
-    req.params,
-    'tasks:',
-    tasks,
-    'user',
-    foundUser,
-    'task to delete',
-    taskToDelete
-  );
 
   res.status(201).json({ taskToDelete });
 };
@@ -89,7 +75,7 @@ const deleteTask = async (req, res) => {
 const updateTask = async (req, res) => {
   const token = req.headers.authorization.split(' ')[1];
   const email = jwt.decode(token);
-  const {name, description, status, index} = req.body
+  const { name, description } = req.body
 
   const foundUser = await prisma.user.findUnique({
     where: { email: email },
@@ -110,10 +96,10 @@ const updateTask = async (req, res) => {
       id: taskToUpdate[0].id,
     },
     data: {
-      status: status,
-      index: index
+      name: name,
+      description: description
     }
-  })
+  });
   res.json(updatedTask);
 };
 

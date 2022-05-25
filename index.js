@@ -10,7 +10,7 @@ const morgan = require("morgan")
 const cors = require("cors")
 
 //Create a new express application
-const app = express()
+const app = express();
 
 //Tell express we want to use the morgan library
 app.use(morgan("dev"));
