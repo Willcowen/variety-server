@@ -14,8 +14,8 @@ const app = express();
 
 //Tell express we want to use the morgan library
 app.use(morgan("dev"));
-app.use(express.json())
-app.use(cors());
+app.use(express.json());
+app.use(cors())
 
 app.use('/user', userRouter)
 app.use('/task', taskRouter)
