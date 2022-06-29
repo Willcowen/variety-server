@@ -1,28 +1,28 @@
 {
     "inventory": [
       {
-        "model": "LFHBL",
+        "model": "Loefah Black",
         "price": "35.99",
         "imgUrl": "https://media.boohooman.com/i/boohooman/amm13903_black_xl?$product_image_tile$&fmt=webp",
         "color": "Black",
         "size": ["5", "6", "7", "8", "9"]
       },
       {
-        "model": "LFHBR",
+        "model": "Loefah Brown",
         "price": "39.99",
         "imgUrl": "https://media.boohooman.com/i/boohooman/amm13897_tan_xl?$product_image_tile$&fmt=webp",
         "color": "Brown",
         "size": ["5", "6", "7", "8", "9"]
       },
       {
-        "model": "LFHTA",
+        "model": "Loefah Tan",
         "price": "39.99",
         "imgUrl": "https://media.boohooman.com/i/boohooman/amm13900_tan_xl?$product_image_tile$&fmt=webp",
         "color": "Tan",
         "size": ["5", "6", "7", "8", "9"]
       },
       {
-        "model": "LFHBL2",
+        "model": "Loefah Black Faux",
         "price": "29.99",
         "imgUrl": "https://media.boohooman.com/i/boohooman/amm13898_black_xl?$product_image_tile$&fmt=webp",
         "color": "Black",
