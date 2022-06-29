@@ -1,28 +1,28 @@
 {
     "inventory": [
       {
-        "model": "Loefah Black",
+        "model": "Loafer Black",
         "price": "35.99",
         "imgUrl": "https://media.boohooman.com/i/boohooman/amm13903_black_xl?$product_image_tile$&fmt=webp",
         "color": "Black",
         "size": ["5", "6", "7", "8", "9"]
       },
       {
-        "model": "Loefah Brown",
+        "model": "Loafer Brown",
         "price": "39.99",
         "imgUrl": "https://media.boohooman.com/i/boohooman/amm13897_tan_xl?$product_image_tile$&fmt=webp",
         "color": "Brown",
         "size": ["5", "6", "7", "8", "9"]
       },
       {
-        "model": "Loefah Tan",
+        "model": "Loafer Tan",
         "price": "39.99",
         "imgUrl": "https://media.boohooman.com/i/boohooman/amm13900_tan_xl?$product_image_tile$&fmt=webp",
         "color": "Tan",
         "size": ["5", "6", "7", "8", "9"]
       },
       {
-        "model": "Loefah Black Faux",
+        "model": "Loafer Black Faux",
         "price": "29.99",
         "imgUrl": "https://media.boohooman.com/i/boohooman/amm13898_black_xl?$product_image_tile$&fmt=webp",
         "color": "Black",
