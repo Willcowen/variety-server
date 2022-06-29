@@ -1,6 +1,4 @@
-const userRouter = require("./src/routes/user.js")
-const taskRouter = require("./src/routes/task.js")
-const tasksRouter = require("./src/routes/tasks.js")
+const shoesRouter = require("./src/routes/shoes.js")
 
 //Include the express library
 const express = require("express")
@@ -17,9 +15,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors())
 
-app.use('/user', userRouter)
-app.use('/task', taskRouter)
-app.use('/tasks', tasksRouter)
+app.use('/shoes', shoesRouter)
 
 //Start up our server
 const port = process.env.PORT || 4000;

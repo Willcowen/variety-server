@@ -1,8 +1,8 @@
 const { Router } = require('express')
-const { updateTasks } = require('../controllers/tasks')
+const { getShoes } = require('../controllers/shoes')
 
 const router = Router()
 
-router.patch('/', updateTasks)
+router.get('/', getShoes)
 
 module.exports = router
