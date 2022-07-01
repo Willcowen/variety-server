@@ -7,6 +7,9 @@
     "start": "nodemon index.js",
     "build": "npx prisma migrate deploy"
   },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
