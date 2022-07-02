@@ -64,6 +64,38 @@ async function createShoes() {
       color: 'Stone',
       size: 9,
     },
+    {
+      model: 'Trainer Faux Black',
+      price: 32.99,
+      imgUrl:
+        'https://media.boohooman.com/i/boohooman/bmm00404_black_xl?$product_image_category_page$&fmt=webp',
+      color: 'Black',
+      size: 8,
+    },
+    {
+      model: 'Trainer Faux Smart',
+      price: 42.99,
+      imgUrl:
+        'https://media.boohooman.com/i/boohooman/bmm00396_charcoal_xl?$product_image_category_page$&fmt=webp',
+      color: 'Grey',
+      size: 8,
+    },
+    {
+      model: 'Trainer Contrast Black',
+      price: 29.99,
+      imgUrl:
+        'https://media.boohooman.com/i/boohooman/bmm16031_black_xl?$product_image_category_page$&fmt=webp',
+      color: 'Black',
+      size: 8,
+    },
+    {
+      model: 'Trainer Smart White',
+      price: 29.99,
+      imgUrl:
+        'https://media.boohooman.com/i/boohooman/mzz90794_white_xl?$product_image_category_page$&fmt=webp',
+      color: 'White',
+      size: 9,
+    },
   ];
 
   const shoes = [];
