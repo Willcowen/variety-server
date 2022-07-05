@@ -2,9 +2,9 @@ const shoesRouter = require("./src/routes/shoes.js")
 
 //Include the express library
 const express = require("express")
-//Include the morgan middleware
+//Include the morgan middleware (add's console logs to each http request)
 const morgan = require("morgan")
-//Include the cors middleware
+//Include the cors middleware (used so that the backend can tell the browser to authorize front-back interactions)
 const cors = require("cors")
 
 //Create a new express application
