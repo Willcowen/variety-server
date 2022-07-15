@@ -9,92 +9,44 @@ async function seed() {
 async function createShoes() {
   const rawShoes = [
     {
-      model: 'Loafer Black',
+      model: 'Pink Crep',
       price: 35.99,
       imgUrl:
-        'https://media.boohooman.com/i/boohooman/amm13903_black_xl?$product_image_tile$&fmt=webp',
-      color: 'Black',
+        'https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwfdfd3b42/22H226FO043-4007-640_1_main.jpg?sw=475&sh=633&q=100',
+      color: 'Pink',
       size: 6,
     },
     {
-      model: 'Loafer Brown',
+      model: 'Blue Crep',
       price: 39.99,
       imgUrl:
-        'https://media.boohooman.com/i/boohooman/amm13897_tan_xl?$product_image_tile$&fmt=webp',
-      color: 'Brown',
-      size: 4,
-    },
-    {
-      model: 'Loafer Tan',
-      price: 39.99,
-      imgUrl:
-        'https://media.boohooman.com/i/boohooman/amm13900_tan_xl?$product_image_tile$&fmt=webp',
-      color: 'Tan',
-      size: 8,
-    },
-    {
-      model: 'Loafer Black Faux',
-      price: 35.99,
-      imgUrl:
-        'https://media.boohooman.com/i/boohooman/amm13898_black_xl?$product_image_tile$&fmt=webp',
-      color: 'Black',
-      size: 9,
-    },
-    {
-      model: 'Loafer Faux Suede',
-      price: 35.99,
-      imgUrl:
-        'https://media.boohooman.com/i/boohooman/bmm10151_navy_xl?$product_image_category_page$&fmt=webp',
+        'https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw61b34aab/22H226FO043-4007-320_1_main.jpg?sw=475&sh=633&q=100',
       color: 'Blue',
-      size: 7,
-    },
-    {
-      model: 'Loafer Textured',
-      price: 35.99,
-      imgUrl:
-        'https://media.boohooman.com/i/boohooman/bmm10160_light%20blue_xl?$product_image_category_page$&fmt=webp',
-      color: 'Black',
       size: 4,
     },
     {
-      model: 'Loafer Gum',
+      model: 'Pale Crep',
+      price: 39.99,
+      imgUrl:
+        'https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc00285d7/22H226FO043-4007-150_1_main.jpg?sw=475&sh=633&q=100',
+      color: 'Pale',
+      size: 8,
+    },
+    {
+      model: 'Yellow Crep',
       price: 35.99,
       imgUrl:
-        'https://media.boohooman.com/i/boohooman/bmm10146_tan_xl?$product_image_category_page$&fmt=webp',
-      color: 'Stone',
+        'https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwfdaecd45/22H226FO043-4007-530_1_main.jpg?sw=475&sh=633&q=100',
+      color: 'Yellow',
       size: 9,
     },
     {
-      model: 'Trainer Faux Black',
-      price: 32.99,
+      model: 'Cream Crep',
+      price: 35.99,
       imgUrl:
-        'https://media.boohooman.com/i/boohooman/bmm00404_black_xl?$product_image_category_page$&fmt=webp',
-      color: 'Black',
-      size: 8,
-    },
-    {
-      model: 'Trainer Faux Smart',
-      price: 42.99,
-      imgUrl:
-        'https://media.boohooman.com/i/boohooman/bmm00396_charcoal_xl?$product_image_category_page$&fmt=webp',
-      color: 'Grey',
-      size: 8,
-    },
-    {
-      model: 'Trainer Contrast Black',
-      price: 29.99,
-      imgUrl:
-        'https://media.boohooman.com/i/boohooman/bmm16031_black_xl?$product_image_category_page$&fmt=webp',
-      color: 'Black',
-      size: 8,
-    },
-    {
-      model: 'Trainer Smart White',
-      price: 29.99,
-      imgUrl:
-        'https://media.boohooman.com/i/boohooman/mzz90794_white_xl?$product_image_category_page$&fmt=webp',
-      color: 'White',
-      size: 9,
+        'https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwacfd4e5b/22H226FO041-4007-910_1_main.jpg?sw=475&sh=633&q=100',
+      color: 'Cream',
+      size: 7,
     },
   ];
 
