@@ -62,6 +62,56 @@ async function createShoes() {
   return shoes;
 }
 
+async function createDresses () {
+
+  const rawDresses = [
+    {
+      model: 'White Dress',
+      price: 99.99,
+      imgUrl:
+        'https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw409ab3d0/22H223DR017-1107-1CT_1_main.jpg?sw=475&sh=633&q=100',
+      color: 'White',
+      size: 8,
+    },
+    {
+      model: 'Blazer Dress',
+      price: 89.99,
+      imgUrl:
+        'https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandwarehttps://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7107ae7e/22H221DR016-1029-150_5.jpg?sw=475&sh=633&q=100.static/-/Sites-master-jacquemus/default/dw409ab3d0/22H223DR017-1107-1CT_1_main.jpg?sw=475&sh=633&q=100',
+      color: 'Tan',
+      size: 10,
+    },
+    {
+      model: 'Black Dress',
+      price: 69.99,
+      imgUrl:
+        'https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandwarehttpshttps://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe863d0f5/22H213DR106-1020-990_4.jpg?sw=475&sh=633&q=100://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7107ae7e/22H221DR016-1029-150_5.jpg?sw=475&sh=633&q=100.static/-/Sites-master-jacquemus/default/dw409ab3d0/22H223DR017-1107-1CT_1_main.jpg?sw=475&sh=633&q=100',
+      color: 'Black',
+      size: 10,
+    },
+    {
+      model: 'Green Dress',
+      price: 59.99,
+      imgUrl:
+        'https://www.jacquemus.com/dw/imagehttps://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw118758b4/22H223KN097-2157-580_1_main.jpg?sw=475&sh=633&q=100/v2/BJFJ_PRD/on/demandwarehttpshttps://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe863d0f5/22H213DR106-1020-990_4.jpg?sw=475&sh=633&q=100://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7107ae7e/22H221DR016-1029-150_5.jpg?sw=475&sh=633&q=100.static/-/Sites-master-jacquemus/default/dw409ab3d0/22H223DR017-1107-1CT_1_main.jpg?sw=475&sh=633&q=100',
+      color: 'Green',
+      size: 10,
+    },
+  ]
+
+  const dresses = []
+
+  for (const rawDress of rawDresses) {
+    const dress = await prisma.dress.create({ data: rawDress });
+    dresses.push(dress);
+  }
+
+  console.log('dresses created', dresses)
+
+  return dresses
+
+}
+
 seed()
   .catch(async (e) => {
     console.error(e);

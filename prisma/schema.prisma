@@ -16,6 +16,15 @@ model Shoe {
   model        String        
   price        Float
   imgUrl       String
-  color        String
+  color        String     
+  size         Int
+}
+
+model Dress {
+  id           Int           @id @default(autoincrement())
+  model        String        
+  price        Float
+  imgUrl       String
+  color        String     
   size         Int
 }

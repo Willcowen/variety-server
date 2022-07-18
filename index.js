@@ -15,7 +15,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors())
 
-app.use('/clothing', shoesRouter)
+app.use('/shoes', shoesRouter)
 
 //Start up our server
 const port = process.env.PORT || 4000;
