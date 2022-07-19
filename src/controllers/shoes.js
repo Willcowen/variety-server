@@ -1,4 +1,3 @@
-const shoes = require('../../shoes.json')
 const prisma = require('../utils/prisma')
 
 const getShoes = async (req, res) => {

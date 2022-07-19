@@ -1,4 +1,5 @@
 const shoesRouter = require("./src/routes/shoes.js")
+const shoesRouter = require("./src/routes/dresses.js")
 
 //Include the express library
 const express = require("express")
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(cors())
 
 app.use('/shoes', shoesRouter)
+app.use('/dresses', dressesRouter)
 
 //Start up our server
 const port = process.env.PORT || 4000;
